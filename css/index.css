@@ -1,0 +1,57 @@
+/*#121f39 #166581 #4e3768 #321c3a #d86375 #f31cb6*/
+/**/
+
+html, body, main{
+    height: 100%;
+    background-color: #121f39;
+    box-sizing: border-box;
+}
+/* sección sobre mí*/
+.presentacion{
+    margin-top: 8px;
+    display: grid;
+    grid-template-areas: "presentacion-contenido1" "presentacion2";
+    grid-template-columns: 5fr 6fr;
+    gap: 10px;
+}
+
+.presentacion-contenido1{
+    display: flex ;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e3768;
+    padding: 0 25px 0 25px;
+    border-radius: 80px 30px;
+}
+
+.presentacion-contenido2{
+    display: flex ;
+    flex-direction: row;
+    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    background-color: #321c3a;
+    padding: 0 25px 0 25px;
+    border-radius: 30px 80px;
+}
+
+.imggata{
+    width: 70px;
+    height: 80px;
+}
+
+.presentacion-tituloppal{
+    color: #e07787;
+    font-size: 60px;
+    font-family: "Doto", sans-serif;
+}
+
+.presentacion-titulosec{
+    color: #e47f8e;
+    font-size: 45px;
+    font-family: "Doto", sans-serif;
+}
+
+/* FIN sección sobre mí*/
