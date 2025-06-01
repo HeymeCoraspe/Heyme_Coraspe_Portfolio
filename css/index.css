@@ -1,14 +1,15 @@
-/*#121f39 #166581 #4e3768 #321c3a #d86375 c*/
+/*#121f39 #166581 #4e3768 #321c3a #d86375 #f31cb6 #bdbdbd
+font-family: "Doto", sans-serif;*/
 /**/
 
 html, body, main{
     height: 100%;
     background-color: #121f39;
     box-sizing: border-box;
-    color: cadetblue;
+    color:#bdbdbd;
 }
 
-li, ul{
+li, ul, list-item{
     list-style: none;    
 }
 /* sección sobre mí*/
@@ -61,14 +62,71 @@ li, ul{
 
 /*INICIO formación y habilidades*/
 .formacion-habilidades{
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-columns: 1fr 4fr 2fr;
+    gap: 30px;
+
 }
 
-.h-contacto{
+.h-contacto,.h-formacion, .h-habilidades{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+}
+
+ .formacion-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacto-tit, .formacion-tit, .skills-tit{
+    font-family: "Doto", sans-serif;
+    font-size: 35px;
+    color: #d86375;
+}
+
+.h-contacto {
+    background-color: #321c3a;
+    border-radius: 80px 30px;
+}
+
+.h-formacion{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+.formacion-col1{
+    background-color: #4e3768;
+    border-radius: 30px 80px;
+}
+
+.formacion-p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.formacion-col2{
+    background-color: #321c3a;
+    border-radius: 80px 30px;
+}
+
+.h-habilidades{
+    background-color: #4e3768;
+    border-radius: 30px 80px;
+}
+
+.formacion-izq, .formacion-der{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*FIN formación y habilidades*/
+.prueba{
+    background-color: #e47f8e;
+    color: #121f39;
 }
