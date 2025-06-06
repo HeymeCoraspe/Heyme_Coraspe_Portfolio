@@ -10,7 +10,7 @@ html, body, main{
 
 li, ul, list-item, a{
     list-style: none;    
-    text-decoration: none;
+    text-decoration: none !important;
 }
 /* sección sobre mí*/
 .presentacion{
@@ -85,7 +85,6 @@ li, ul, list-item, a{
     font-family: "Doto", sans-serif;
     font-size: 45px;
     color: #d86375;
-    background-color:#121f39;
     border-radius: 80px;
     padding: 9px;
 }
@@ -143,8 +142,14 @@ li, ul, list-item, a{
     gap: 1.15rem;
 }
 
-.proyectos-card{
+.proyectos-card {
     background-color: #321c3a;
+    overflow: hidden;
+    border-radius:60px;
+}
+
+.proyectos-card1{
+    background-color: #4e3768;
     overflow: hidden;
     border-radius:60px;
 }
@@ -168,7 +173,9 @@ li, ul, list-item, a{
     color: #d86375;
     font-size: 1.8rem;
     font-family: "Doto", sans-serif;
-    
+
+    border-radius: 80px;
+    padding: 8px;
 }
 
 .proyectos-tit, .presentacion-tit{
@@ -181,3 +188,38 @@ li, ul, list-item, a{
     margin: 20px;
 }
 
+.proyectos-p{
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px){
+    .presentacion, .formacion-habilidades, .h-formacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imggata{
+        visibility: hidden;
+    }
+
+    .formacion-tit, .skills-tit{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .proyectos-p{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .presentacion-tituloppal, .presentacion-titulosec{
+        font-size: 2rem;
+    }
+    /**
+    .presentacion-contenido1, .presentacion-contenido2,.formacion-habilidades{
+        width: 100%;
+        max-width: 500px;
+        flex-direction: column;
+        align-items: center;
+    }*/
+}
